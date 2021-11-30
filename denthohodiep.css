@@ -1,0 +1,195 @@
+html{
+  background-color:#DEDED9;
+}
+body{
+  line-height: 1.5;
+  margin:0;
+  
+}
+
+header{
+  margin-top: 10px;
+}
+#main{
+    font-family: 'Noto Serif', serif;
+}
+#title {
+  text-align:center;
+  font-size: 30px;
+  padding: 10px;
+}
+#title h1{
+  font-size:50px;
+}
+
+#img-div{
+  border-radius: 20px;
+  margin:10px;
+  padding: 10px;
+  background-color: #F9F9F6;
+}
+
+#image{
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  max-width: 100%;
+  height:auto;
+}
+#img-caption{
+  text-align:center;
+  padding: 20px;
+  font-style: italic;
+}
+#tribute-info{
+  display:grid;
+  width:100%;
+  padding: 10px 10px 10px 10px;
+  margin: 0px 50px 0px 0px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-gap: 10px;
+  grid-template-areas:
+    "status"
+    "story"
+    "begining"
+    "pronounce"
+    "popular-VN"
+    "popular-CN"
+
+}
+@media (min-width: 500px){
+  #tribute-info{
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto ;
+  grid-gap: 10px;
+  grid-template-areas:
+    "begining status"
+    "begining story" 
+    "pronounce pronounce"
+    "popular-VN popular-CN"
+  }
+}
+  
+.grid-box{
+  background-color:#F9F9F6;
+  border-radius: 20px;
+  padding: 10px 40px 10px 40px;
+  line-height: 1.6;
+}
+.grid-box hr{ 
+  opacity: 0.5;
+  margin: 0 20px 10px 0px
+}
+ul{
+  line-height: 1.6;
+}
+li{
+   margin: 16px 0;
+}
+.status-grid {
+  grid-area: status;
+}
+.story-grid {
+  
+  grid-area: story;
+  
+}
+.begining-grid{
+  
+  grid-area: begining;
+ 
+}
+.pronounce-grid{
+  
+  grid-area: pronounce;
+  
+}
+.popular-VN-grid{
+  
+  grid-area: popular-VN;
+  
+}
+.popular-CN-grid{
+  
+  grid-area: popular-CN;
+  
+}
+#link {
+  background-color:#F9F9F6;
+  border-radius: 20px;
+  padding: 10px 10px 10px 40px;
+  line-height: 1.6;
+  margin: 10px;
+}
+#tribute-link{
+  color:blue;
+}
+
+#menu {
+  background: transparent;
+  border-radius: 20px;
+  padding: 0;
+  line-height: 0.5 ;
+  margin: 10px 0;
+  text-align: center;
+}
+#menu h4{
+    
+}
+#menu ul{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+50,e1e1e1+51,f6f6f6+100;White+Gloss+%231 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flew-wrap: nowrap;
+}
+#menu li{
+  
+  padding: 10px;
+  margin: 0px;
+}
+#menu li:hover{
+  
+  color:red;
+  background-color: white;
+  opacity:0.5;
+}
+#menu a:hover{
+  color:red;
+}
+#menu a{
+  text-decoration:none;
+  color:black;
+}
+#footer{
+  background-color: black;
+  color:white;
+  height: 30px;
+  text-align: center;
+}
+#icon-mess{
+  
+}
+#icon-mess img{
+		width : 50px;
+		height: 50px;
+		position:fixed;
+		bottom: 20px;
+		right: 20px;
+    filter: drop-shadow(5px 5px 5px #B2B2A9);
+}
+#icon-call img{
+		width : 50px;
+		height: 50px;
+		position:fixed;
+		bottom: 90px;
+		right: 20px;
+    filter: drop-shadow(5px 5px 5px #B2B2A9);
+}
